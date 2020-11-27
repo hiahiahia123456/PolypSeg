@@ -20,6 +20,6 @@ parser.add_argument('--clip', type=float, default=0.5, help='gradient clipping m
 parser.add_argument('--decay_rate', type=float, default=0.1, help='decay rate of learning rate')
 parser.add_argument('--decay_epoch', type=int, default=50, help='every n epochs decay learning rate')
 parse.add_argument('--ckpt_period', type=int, default=5, help='how often the checkpoint is saved')
-parse.add_argument('--use_gpu', type=bool, default=True, help='whether to use GPU')
+parse.add_argument('--gpu', type=str, default='0', help='choose GPUs to use')
 
 config = parse.parse_args()
